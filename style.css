@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100%;
+    width: 100%;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    max-width: 66vw;
+    padding: 2rem 1rem;
+    margin: 0 auto;
+}
+.header-container{
+    margin-bottom: 2.8rem;
+}
+.header-title{
+    margin-bottom: 1rem;
+    font-size: 1.7rem;
+    line-height: 2rem;
+    font-weight: 700;
+    text-align: center;
+}
+.header-desc{
+    max-width: 568px;
+    text-align: center;
+    color: rgb(105, 99, 99);
+    margin: 0 auto;
+}
+.main-container{
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(4, 1fr);
+}
+.card-container{
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    border: 1px solid rgb(112, 109, 109);
+    border-radius: 8px;
+}
+.card-image-container{
+    position: relative;
+    overflow: hidden;
+    height: 14rem;
+}
+.card-image{
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+.card-title-container{
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+}
+.card-container:hover .card-image{
+    transform: scale(1.1);
+    transition-duration: 200ms;
+}
+.card-title{
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgb(44, 37, 37);
+    line-height: 1.5rem;
+    margin-bottom: 0.3rem;
+}
+.card-title-anchor:hover{    
+    color: blue;
+}
+.card-desc{
+    color: rgb(113, 99, 99);
+    font-size: 1rem;
+}
+.card-footer-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 1.5rem;
+}
+.author-container{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.author-avtar-container{
+    height: 2.5rem;
+    width: 2.5rem;
+    overflow: hidden;
+    border: 1px solid rgb(120, 109, 109);
+    border-radius: 50%;
+    background-color: rgb(220, 217, 217);
+}
+.author-info-container{
+    display: flex;
+    flex-direction: column; 
+}
+.author-info-container :nth-child(1){
+    color: blue;
+}
+.author-info-container :nth-child(2){
+    color: rgb(110, 109, 109);
+}
+.card-tag-container{
+    font-size: 0.9rem;
+    border: 1px solid rgb(78, 56, 56);
+    border-radius: 2px;
+    padding: 0.25rem 0.5rem;
+    line-height: 1.3rem;
+    color: grey;
+}
